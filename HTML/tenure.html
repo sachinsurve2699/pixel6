@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan APP</title>
+    <link rel="stylesheet" href="../CSS/tenure.css">
+</head>
+
+<body onload="displayuserinfo()">
+    <div class="container">
+        <div id="info" style="text-align: right; font-weight: bold; color: gray;">
+            Welcome, <span id="userinfo"></span>  <button onclick="logout()">Logout</button>
+        </div>
+        <div style="text-align: center;"><h1>Loan Tenure Page</h1></div>        
+        <div class="form">
+            <label for="tenure">Select Tenure:</label>             
+            <select id="tenure">
+                <option value="" disabled selected> - - - - Select One - - - - </option>
+                <option value="1">1 year</option>
+                <option value="2">2 year</option>
+                <option value="3">3 year</option>
+                <option value="4">4 year</option>
+                <option value="5">5 year</option>
+            </select>
+        </div>
+        <div class="form">
+            <label for="interest">Interest Rate Information:</label>
+            <span id="interest">
+                <ul>
+                    <li>1 year - 8%</li>
+                    <li>2 year - 10%</li>
+                    <li>3 year - 12%</li>
+                    <li>4 year - 15%</li>
+                    <li>5 year - 18%</li>
+                </ul>
+            </span>
+        </div>        
+        <div class="form">
+            <button onclick="calculate()">Calculate EMI</button>
+        </div>
+        <div class="form">
+            <label for="emi">Estimated Monthly Payment (EMI):</label> &nbsp;
+            <span id="emi"></span>            
+        </div>
+        <script src="../JS/tenure.js"></script>
+        <script src="../JS/session.js"></script>
+</body>
+
+</html>

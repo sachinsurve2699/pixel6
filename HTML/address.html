@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan APP</title>
+    <link rel="stylesheet" href="../CSS/address.css">    
+</head>
+<body onload="displayuserinfo()">    
+    <div class="container">
+        <div id="info" style="text-align: right; font-weight: bold; color: gray;">
+            Welcome, <span id="userinfo"></span>  <button onclick="logout()">Logout</button>
+        </div>
+        <div style="text-align: center;">
+            <h2>Address Page</h2>
+        </div>
+        <form id="address">
+            <div class="form">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form">
+                <label for="addressline1">Address Line 1:</label>
+                <input type="text" id="addressline1" name="addressline1" required>
+            </div>
+            <div class="form">
+                <label for="addressline2">Address Line 2: (optional)</label>
+                <input type="text" id="addressline2" name="addressline2">
+            </div>
+            <div class="form">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div class="form">
+                <label for="zip">Postal Code:</label>
+                <input type="number" id="zip" name="zip" required>
+            </div>
+            <div class="form">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+            <button type="button" onclick="formdetails()">Submit</button>
+        </form>
+    </div>
+    <script src="../JS/address.js"></script>   
+    <script src="../JS/session.js"></script>
+</body>
+</html>

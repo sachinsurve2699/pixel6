@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan App</title>
+    <link rel="stylesheet" href="../CSS/confirm.css">
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: center;">
+            <h2>Confirmation Page</h2>
+        </div>
+        <p>Dear <span id="firstname"></span>,</p>
+        <p>Thank you for your inquiry. A 4-digit verification number has been sent to your email: <span id="useremail"></span></p> 
+        <p>Please enter it in the following box and submit for confirmation:</p>
+        <div id="Form">
+            <input type="text" id="otp" placeholder="Enter OTP">
+            <button id="button" onclick="validateotp()">Validate</button>
+        </div>
+        <p id="message"></p> <p id="message1"></p>
+    </div>
+    <script src="../JS/confirm.js"></script>
+    <script src="../JS/session.js"></script>
+</body>
+</html>
